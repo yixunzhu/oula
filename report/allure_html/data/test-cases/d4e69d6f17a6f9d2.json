@@ -1,0 +1,84 @@
+{
+  "uid" : "d4e69d6f17a6f9d2",
+  "name" : "test_001_oracle_user",
+  "fullName" : "testcases.高危命令.mysql.test_002_orcle_user#test_001_oracle_user",
+  "historyId" : "7808fc6d786b4fa22dbd06965c6a6dc8",
+  "time" : {
+    "start" : 1700200888312,
+    "stop" : 1700200888400,
+    "duration" : 88
+  },
+  "description" : "\n    :return:\n    ",
+  "descriptionHtml" : "<pre><code>:return:\n</code></pre>\n",
+  "status" : "broken",
+  "statusMessage" : "TypeError: 'bool' object is not subscriptable",
+  "statusTrace" : "def test_001_oracle_user():\n        \"\"\"\n        :return:\n        \"\"\"\n        _sql_list = list(mysql_oracleUser_sql.values())\n        # 清除环境，没有添加任何高危权限设置时，执行对应权限SQL语句，可以执行，不会有高危提示\n>       high_risk_resources.delete_all_high_risk_source_permission(_connection)\n\ntestcases\\高危命令\\mysql\\test_002_orcle_user.py:36: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\ntins\\api\\db_manage\\access_set\\high_risk_resources.py:157: in delete_all_high_risk_source_permission\n    _permission_ids = db_manage_public.get_permission_ids(connection_name, _perm_type)\ntins\\api\\db_manage\\db_manage_public.py:104: in get_permission_ids\n    res = get_permission_info(connection_name, _perm_type)\ntins\\api\\db_manage\\db_manage_public.py:29: in get_permission_info\n    connection_id = get_connection_id(connection_name)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nconnection_name = 'xyz_test6666_mysql'\n\n    def get_connection_id(connection_name):\n        \"\"\"\n        通过连接名称获取connection_id\n        :param connection_name:\n        :return:\n        \"\"\"\n        _info = get_info()\n>       connection_id = jsonpath.jsonpath(_info, \"$.data.data[?(@.nodeName=='{}')].connectionId\".format(connection_name))[0]\nE       TypeError: 'bool' object is not subscriptable\n\ntins\\api\\public.py:317: TypeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "\n    :return:\n    ",
+    "status" : "broken",
+    "statusMessage" : "TypeError: 'bool' object is not subscriptable",
+    "statusTrace" : "def test_001_oracle_user():\n        \"\"\"\n        :return:\n        \"\"\"\n        _sql_list = list(mysql_oracleUser_sql.values())\n        # 清除环境，没有添加任何高危权限设置时，执行对应权限SQL语句，可以执行，不会有高危提示\n>       high_risk_resources.delete_all_high_risk_source_permission(_connection)\n\ntestcases\\高危命令\\mysql\\test_002_orcle_user.py:36: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\ntins\\api\\db_manage\\access_set\\high_risk_resources.py:157: in delete_all_high_risk_source_permission\n    _permission_ids = db_manage_public.get_permission_ids(connection_name, _perm_type)\ntins\\api\\db_manage\\db_manage_public.py:104: in get_permission_ids\n    res = get_permission_info(connection_name, _perm_type)\ntins\\api\\db_manage\\db_manage_public.py:29: in get_permission_info\n    connection_id = get_connection_id(connection_name)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nconnection_name = 'xyz_test6666_mysql'\n\n    def get_connection_id(connection_name):\n        \"\"\"\n        通过连接名称获取connection_id\n        :param connection_name:\n        :return:\n        \"\"\"\n        _info = get_info()\n>       connection_id = jsonpath.jsonpath(_info, \"$.data.data[?(@.nodeName=='{}')].connectionId\".format(connection_name))[0]\nE       TypeError: 'bool' object is not subscriptable\n\ntins\\api\\public.py:317: TypeError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "a1c026df82787245",
+      "name" : "log",
+      "source" : "a1c026df82787245.txt",
+      "type" : "text/plain",
+      "size" : 907
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcases.高危命令.mysql"
+  }, {
+    "name" : "suite",
+    "value" : "test_002_orcle_user"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-BQ91TRPV"
+  }, {
+    "name" : "thread",
+    "value" : "27328-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.高危命令.mysql.test_002_orcle_user"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "d4e69d6f17a6f9d2.json",
+  "parameterValues" : [ ]
+}

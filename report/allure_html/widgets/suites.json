@@ -1,0 +1,59 @@
+{
+  "total" : 5,
+  "items" : [ {
+    "uid" : "805473e790454d068e30889f24c615a6",
+    "name" : "testcases.高危命令.oraclleCDB",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 15,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 15
+    }
+  }, {
+    "uid" : "d27699be95ed2b2da63aa14a70d30cae",
+    "name" : "testcases.高危命令.pg",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 15,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 15
+    }
+  }, {
+    "uid" : "da51f6418ead82be17c21adc36ac68f8",
+    "name" : "testcases.高危命令.sqlserver",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 15,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 15
+    }
+  }, {
+    "uid" : "2250a2d8b9333723cdcea2687c5b3154",
+    "name" : "testcases.高危命令.mysql",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 12,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 12
+    }
+  }, {
+    "uid" : "9e8655eaa9895fc6f79b5e437bb0df83",
+    "name" : "testcases.高危命令.oracle",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 12,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 12
+    }
+  } ]
+}

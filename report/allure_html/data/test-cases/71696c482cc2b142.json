@@ -1,0 +1,84 @@
+{
+  "uid" : "71696c482cc2b142",
+  "name" : "test_003_only_apply_one_permission",
+  "fullName" : "testcases.高危命令.oracle.test_004_table_orcle#test_003_only_apply_one_permission",
+  "historyId" : "57ff2c02186d445d053bb0c0b0541322",
+  "time" : {
+    "start" : 1700200890422,
+    "stop" : 1700200890501,
+    "duration" : 79
+  },
+  "description" : "\n    # 用例：\n    # 1、只自定义数据源连接 - 高危（insert）\n    # 2、普通用户执行insert报高危提示，但是执行：updata, delete, creat_table）不会报高危提示\n    # 清除环境，没有添加任何高危权限设置时，执行对应权限SQL语句，可以执行，不会有高危提示\n    :return:\n    ",
+  "descriptionHtml" : "<pre><code># 用例：\n# 1、只自定义数据源连接 - 高危（insert）\n# 2、普通用户执行insert报高危提示，但是执行：updata, delete, creat_table）不会报高危提示\n# 清除环境，没有添加任何高危权限设置时，执行对应权限SQL语句，可以执行，不会有高危提示\n:return:\n</code></pre>\n",
+  "status" : "broken",
+  "statusMessage" : "TypeError: 'bool' object is not subscriptable",
+  "statusTrace" : "def test_003_only_apply_one_permission():\n        \"\"\"\n        # 用例：\n        # 1、只自定义数据源连接 - 高危（insert）\n        # 2、普通用户执行insert报高危提示，但是执行：updata, delete, creat_table）不会报高危提示\n        # 清除环境，没有添加任何高危权限设置时，执行对应权限SQL语句，可以执行，不会有高危提示\n        :return:\n        \"\"\"\n        _sql_list = list(oracle_connection_sql.values())\n>       high_risk_resources.delete_all_high_risk_source_permission(_connection)\n\ntestcases\\高危命令\\oracle\\test_004_table_orcle.py:92: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\ntins\\api\\db_manage\\access_set\\high_risk_resources.py:157: in delete_all_high_risk_source_permission\n    _permission_ids = db_manage_public.get_permission_ids(connection_name, _perm_type)\ntins\\api\\db_manage\\db_manage_public.py:104: in get_permission_ids\n    res = get_permission_info(connection_name, _perm_type)\ntins\\api\\db_manage\\db_manage_public.py:29: in get_permission_info\n    connection_id = get_connection_id(connection_name)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nconnection_name = 'xyz_test6666_oracle'\n\n    def get_connection_id(connection_name):\n        \"\"\"\n        通过连接名称获取connection_id\n        :param connection_name:\n        :return:\n        \"\"\"\n        _info = get_info()\n>       connection_id = jsonpath.jsonpath(_info, \"$.data.data[?(@.nodeName=='{}')].connectionId\".format(connection_name))[0]\nE       TypeError: 'bool' object is not subscriptable\n\ntins\\api\\public.py:317: TypeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "\n    # 用例：\n    # 1、只自定义数据源连接 - 高危（insert）\n    # 2、普通用户执行insert报高危提示，但是执行：updata, delete, creat_table）不会报高危提示\n    # 清除环境，没有添加任何高危权限设置时，执行对应权限SQL语句，可以执行，不会有高危提示\n    :return:\n    ",
+    "status" : "broken",
+    "statusMessage" : "TypeError: 'bool' object is not subscriptable",
+    "statusTrace" : "def test_003_only_apply_one_permission():\n        \"\"\"\n        # 用例：\n        # 1、只自定义数据源连接 - 高危（insert）\n        # 2、普通用户执行insert报高危提示，但是执行：updata, delete, creat_table）不会报高危提示\n        # 清除环境，没有添加任何高危权限设置时，执行对应权限SQL语句，可以执行，不会有高危提示\n        :return:\n        \"\"\"\n        _sql_list = list(oracle_connection_sql.values())\n>       high_risk_resources.delete_all_high_risk_source_permission(_connection)\n\ntestcases\\高危命令\\oracle\\test_004_table_orcle.py:92: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\ntins\\api\\db_manage\\access_set\\high_risk_resources.py:157: in delete_all_high_risk_source_permission\n    _permission_ids = db_manage_public.get_permission_ids(connection_name, _perm_type)\ntins\\api\\db_manage\\db_manage_public.py:104: in get_permission_ids\n    res = get_permission_info(connection_name, _perm_type)\ntins\\api\\db_manage\\db_manage_public.py:29: in get_permission_info\n    connection_id = get_connection_id(connection_name)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nconnection_name = 'xyz_test6666_oracle'\n\n    def get_connection_id(connection_name):\n        \"\"\"\n        通过连接名称获取connection_id\n        :param connection_name:\n        :return:\n        \"\"\"\n        _info = get_info()\n>       connection_id = jsonpath.jsonpath(_info, \"$.data.data[?(@.nodeName=='{}')].connectionId\".format(connection_name))[0]\nE       TypeError: 'bool' object is not subscriptable\n\ntins\\api\\public.py:317: TypeError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "11ff35d59de16f09",
+      "name" : "log",
+      "source" : "11ff35d59de16f09.txt",
+      "type" : "text/plain",
+      "size" : 907
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcases.高危命令.oracle"
+  }, {
+    "name" : "suite",
+    "value" : "test_004_table_orcle"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-BQ91TRPV"
+  }, {
+    "name" : "thread",
+    "value" : "27328-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.高危命令.oracle.test_004_table_orcle"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "71696c482cc2b142.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,691 @@
+[ {
+  "uid" : "7b7e8d8adcb05904",
+  "name" : "test_001_table_group",
+  "time" : {
+    "start" : 1700200889952,
+    "stop" : 1700200890036,
+    "duration" : 84
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "d20fa47644e4d83c",
+  "name" : "test_001_oracle_user",
+  "time" : {
+    "start" : 1700200889625,
+    "stop" : 1700200889717,
+    "duration" : 92
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "beb3ae6e82f73494",
+  "name" : "test_001_table_group",
+  "time" : {
+    "start" : 1700200891765,
+    "stop" : 1700200891848,
+    "duration" : 83
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "1ba39772bbfacc8b",
+  "name" : "test_003_only_apply_one_permission",
+  "time" : {
+    "start" : 1700200890147,
+    "stop" : 1700200890224,
+    "duration" : 77
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "db2e905503d74a95",
+  "name" : "test_002_username_apply_permission",
+  "time" : {
+    "start" : 1700200889409,
+    "stop" : 1700200889500,
+    "duration" : 91
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "90f209d13c046b8c",
+  "name" : "test_003_only_apply_one_permission",
+  "time" : {
+    "start" : 1700200892240,
+    "stop" : 1700200892316,
+    "duration" : 76
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "1b46fd0a20dfcc9b",
+  "name" : "test_002_username_apply_permission",
+  "time" : {
+    "start" : 1700200890052,
+    "stop" : 1700200890133,
+    "duration" : 81
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "6b0c5a0917132be1",
+  "name" : "test_001_connection",
+  "time" : {
+    "start" : 1700200890519,
+    "stop" : 1700200890596,
+    "duration" : 77
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "607bc669b9eb4ec3",
+  "name" : "test_001_database",
+  "time" : {
+    "start" : 1700200893717,
+    "stop" : 1700200893797,
+    "duration" : 80
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "ad76534d97faaa25",
+  "name" : "test_003_only_apply_one_permission",
+  "time" : {
+    "start" : 1700200889197,
+    "stop" : 1700200889291,
+    "duration" : 94
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "f4d12af911a2fa2",
+  "name" : "test_003_only_apply_one_permission",
+  "time" : {
+    "start" : 1700200894198,
+    "stop" : 1700200894273,
+    "duration" : 75
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "4209d718c9c1f4da",
+  "name" : "test_002_username_apply_permission",
+  "time" : {
+    "start" : 1700200890928,
+    "stop" : 1700200891018,
+    "duration" : 90
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "52ce528baccf13a3",
+  "name" : "test_003_only_apply_one_permission",
+  "time" : {
+    "start" : 1700200894481,
+    "stop" : 1700200894558,
+    "duration" : 77
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "e96792ff1c0129a4",
+  "name" : "test_002_username_apply_permission",
+  "time" : {
+    "start" : 1700200893813,
+    "stop" : 1700200893901,
+    "duration" : 88
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "c11f72c8e18f0808",
+  "name" : "test_003_only_apply_one_permission",
+  "time" : {
+    "start" : 1700200893917,
+    "stop" : 1700200893992,
+    "duration" : 75
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "a67839a473087326",
+  "name" : "test_003_only_apply_one_permission",
+  "time" : {
+    "start" : 1700200893352,
+    "stop" : 1700200893429,
+    "duration" : 77
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "ba1a7bca7823ac53",
+  "name" : "test_002_username_apply_permission",
+  "time" : {
+    "start" : 1700200893265,
+    "stop" : 1700200893336,
+    "duration" : 71
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "3e70802070192f32",
+  "name" : "test_001_connection",
+  "time" : {
+    "start" : 1700200892055,
+    "stop" : 1700200892135,
+    "duration" : 80
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "ac3d80eaac280ddd",
+  "name" : "test_002_username_apply_permission",
+  "time" : {
+    "start" : 1700200893535,
+    "stop" : 1700200893608,
+    "duration" : 73
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "807755f1cbe1e73d",
+  "name" : "test_002_username_apply_permission",
+  "time" : {
+    "start" : 1700200889731,
+    "stop" : 1700200889822,
+    "duration" : 91
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "f1c4467a3555699f",
+  "name" : "test_001_connection",
+  "time" : {
+    "start" : 1700200889308,
+    "stop" : 1700200889391,
+    "duration" : 83
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "fe32e06e62f21874",
+  "name" : "test_003_only_apply_one_permission",
+  "time" : {
+    "start" : 1700200891665,
+    "stop" : 1700200891746,
+    "duration" : 81
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "273ca159b06f87c",
+  "name" : "test_001_table_group",
+  "time" : {
+    "start" : 1700200892879,
+    "stop" : 1700200892955,
+    "duration" : 76
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "acb24f8542548f74",
+  "name" : "test_002_username_apply_permission",
+  "time" : {
+    "start" : 1700200888750,
+    "stop" : 1700200888849,
+    "duration" : 99
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "432fbc7e3bdef681",
+  "name" : "test_001_oracle_user",
+  "time" : {
+    "start" : 1700200891143,
+    "stop" : 1700200891238,
+    "duration" : 95
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "314c864177f7feb7",
+  "name" : "test_003_only_apply_one_permission",
+  "time" : {
+    "start" : 1700200889515,
+    "stop" : 1700200889609,
+    "duration" : 94
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "243518d5cd5b43ed",
+  "name" : "test_002_username_apply_permission",
+  "time" : {
+    "start" : 1700200894668,
+    "stop" : 1700200894746,
+    "duration" : 78
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "74fc2cdf1c9bc659",
+  "name" : "test_001_table_group",
+  "time" : {
+    "start" : 1700200893173,
+    "stop" : 1700200893249,
+    "duration" : 76
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "2dc01df2e94e4695",
+  "name" : "test_003_only_apply_one_permission",
+  "time" : {
+    "start" : 1700200888864,
+    "stop" : 1700200888961,
+    "duration" : 97
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "c9721e2afd0d3071",
+  "name" : "test_001_oracle_user",
+  "time" : {
+    "start" : 1700200894009,
+    "stop" : 1700200894085,
+    "duration" : 76
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "f28e00994cd61e0",
+  "name" : "test_002_username_apply_permission",
+  "time" : {
+    "start" : 1700200892689,
+    "stop" : 1700200892768,
+    "duration" : 79
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "71696c482cc2b142",
+  "name" : "test_003_only_apply_one_permission",
+  "time" : {
+    "start" : 1700200890422,
+    "stop" : 1700200890501,
+    "duration" : 79
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "8cdec5565b7f0e28",
+  "name" : "test_001_connection",
+  "time" : {
+    "start" : 1700200887743,
+    "stop" : 1700200887826,
+    "duration" : 83
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "f491248e464396e1",
+  "name" : "test_002_username_apply_permission",
+  "time" : {
+    "start" : 1700200890612,
+    "stop" : 1700200890690,
+    "duration" : 78
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "cc3a148c53e50573",
+  "name" : "test_003_only_apply_one_permission",
+  "time" : {
+    "start" : 1700200891351,
+    "stop" : 1700200891434,
+    "duration" : 83
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "10bb4eb8f8232029",
+  "name" : "test_003_only_apply_one_permission",
+  "time" : {
+    "start" : 1700200888209,
+    "stop" : 1700200888296,
+    "duration" : 87
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "568fc4c0872130fd",
+  "name" : "test_001_table",
+  "time" : {
+    "start" : 1700200894574,
+    "stop" : 1700200894651,
+    "duration" : 77
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "c32d90c88d09ed7b",
+  "name" : "test_002_username_apply_permission",
+  "time" : {
+    "start" : 1700200894101,
+    "stop" : 1700200894181,
+    "duration" : 80
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "a99bcfc6e3854de9",
+  "name" : "test_001_table",
+  "time" : {
+    "start" : 1700200888977,
+    "stop" : 1700200889073,
+    "duration" : 96
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "cbd92e96b78564f8",
+  "name" : "test_002_username_apply_permission",
+  "time" : {
+    "start" : 1700200892979,
+    "stop" : 1700200893063,
+    "duration" : 84
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "2aec94647f1a2cb",
+  "name" : "test_003_only_apply_one_permission",
+  "time" : {
+    "start" : 1700200892514,
+    "stop" : 1700200892585,
+    "duration" : 71
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "46517d118e6255c3",
+  "name" : "test_001_table_group",
+  "time" : {
+    "start" : 1700200888638,
+    "stop" : 1700200888736,
+    "duration" : 98
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "e30cd63aecbd14ed",
+  "name" : "test_002_username_apply_permission",
+  "time" : {
+    "start" : 1700200888107,
+    "stop" : 1700200888191,
+    "duration" : 84
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "aa0400015fa95c81",
+  "name" : "test_001_table_group",
+  "time" : {
+    "start" : 1700200894288,
+    "stop" : 1700200894368,
+    "duration" : 80
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "79ff6990b431f472",
+  "name" : "test_003_only_apply_one_permission",
+  "time" : {
+    "start" : 1700200891958,
+    "stop" : 1700200892039,
+    "duration" : 81
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "5ba97fa89d6e9382",
+  "name" : "test_002_username_apply_permission",
+  "time" : {
+    "start" : 1700200891866,
+    "stop" : 1700200891941,
+    "duration" : 75
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "d4e69d6f17a6f9d2",
+  "name" : "test_001_oracle_user",
+  "time" : {
+    "start" : 1700200888312,
+    "stop" : 1700200888400,
+    "duration" : 88
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "253af964e0fac6ef",
+  "name" : "test_003_only_apply_one_permission",
+  "time" : {
+    "start" : 1700200893080,
+    "stop" : 1700200893156,
+    "duration" : 76
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "cd074b6112bf2496",
+  "name" : "test_001_database",
+  "time" : {
+    "start" : 1700200890813,
+    "stop" : 1700200890912,
+    "duration" : 99
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "eb311af5c8e50ed4",
+  "name" : "test_002_username_apply_permission",
+  "time" : {
+    "start" : 1700200888416,
+    "stop" : 1700200888512,
+    "duration" : 96
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "8e742e5ae7bee94d",
+  "name" : "test_003_only_apply_one_permission",
+  "time" : {
+    "start" : 1700200894759,
+    "stop" : 1700200894836,
+    "duration" : 77
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "c72a30982a119b63",
+  "name" : "test_002_username_apply_permission",
+  "time" : {
+    "start" : 1700200892153,
+    "stop" : 1700200892225,
+    "duration" : 72
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "19d387f461c504f7",
+  "name" : "test_003_only_apply_one_permission",
+  "time" : {
+    "start" : 1700200893626,
+    "stop" : 1700200893700,
+    "duration" : 74
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "14bb43050c797e8f",
+  "name" : "test_001_oracle_user",
+  "time" : {
+    "start" : 1700200892601,
+    "stop" : 1700200892675,
+    "duration" : 74
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "48c57b705cab1df",
+  "name" : "test_002_username_apply_permission",
+  "time" : {
+    "start" : 1700200889090,
+    "stop" : 1700200889181,
+    "duration" : 91
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "f7deb4ce8f5b78e6",
+  "name" : "test_002_username_apply_permission",
+  "time" : {
+    "start" : 1700200892427,
+    "stop" : 1700200892498,
+    "duration" : 71
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "dd05055c41e19f59",
+  "name" : "test_003_only_apply_one_permission",
+  "time" : {
+    "start" : 1700200892785,
+    "stop" : 1700200892863,
+    "duration" : 78
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "fdd95b61e117c331",
+  "name" : "test_002_username_apply_permission",
+  "time" : {
+    "start" : 1700200891254,
+    "stop" : 1700200891335,
+    "duration" : 81
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "9a32eec09de1c410",
+  "name" : "test_001_database",
+  "time" : {
+    "start" : 1700200892333,
+    "stop" : 1700200892412,
+    "duration" : 79
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "6f733bc362d5ca47",
+  "name" : "test_002_username_apply_permission",
+  "time" : {
+    "start" : 1700200890334,
+    "stop" : 1700200890410,
+    "duration" : 76
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "81f7ceed7cb7d5dd",
+  "name" : "test_001_connection",
+  "time" : {
+    "start" : 1700200893447,
+    "stop" : 1700200893519,
+    "duration" : 72
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "a087ae5b987d25a3",
+  "name" : "test_001_table",
+  "time" : {
+    "start" : 1700200890240,
+    "stop" : 1700200890316,
+    "duration" : 76
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "afb2243ebe49918a",
+  "name" : "test_003_only_apply_one_permission",
+  "time" : {
+    "start" : 1700200888530,
+    "stop" : 1700200888623,
+    "duration" : 93
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "924eebc264d8ab8c",
+  "name" : "test_003_only_apply_one_permission",
+  "time" : {
+    "start" : 1700200890708,
+    "stop" : 1700200890796,
+    "duration" : 88
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "105dbeab57c0ef00",
+  "name" : "test_001_table_group",
+  "time" : {
+    "start" : 1700200891460,
+    "stop" : 1700200891543,
+    "duration" : 83
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "397c5c06b5589f2",
+  "name" : "test_002_username_apply_permission",
+  "time" : {
+    "start" : 1700200891561,
+    "stop" : 1700200891649,
+    "duration" : 88
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "b58b52ecba987e3",
+  "name" : "test_003_only_apply_one_permission",
+  "time" : {
+    "start" : 1700200891034,
+    "stop" : 1700200891126,
+    "duration" : 92
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "5526366d4f7e9f16",
+  "name" : "test_002_username_apply_permission",
+  "time" : {
+    "start" : 1700200894386,
+    "stop" : 1700200894453,
+    "duration" : 67
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "31a49bf4f499efe2",
+  "name" : "test_003_only_apply_one_permission",
+  "time" : {
+    "start" : 1700200889853,
+    "stop" : 1700200889937,
+    "duration" : 84
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]

@@ -1,0 +1,84 @@
+{
+  "uid" : "beb3ae6e82f73494",
+  "name" : "test_001_table_group",
+  "fullName" : "testcases.高危命令.oraclleCDB.test_005_table_orcleCDB#test_001_table_group",
+  "historyId" : "0f3ce62b13f79337120b51fdf3d7286e",
+  "time" : {
+    "start" : 1700200891765,
+    "stop" : 1700200891848,
+    "duration" : 83
+  },
+  "description" : "\n    连接名称校验\n    :return:\n    数据源：oracleCDB\n    用例一：\n    1、database连接下，不设置任何高危\n    2、普通用户执行（insert,updata,delete,creat_table），不报高危提示。（前提：此用户有这么命令的权限）\n    用例二：\n    1、自定义database-高危（insert,updata,delete,creat_table），并关闭高危复核方式\n    2、普通用户执行（insert,updata,delete,creat_table），报高危提示，但不报高危复核提示\n    用例三：\n    1、自定义database-高危（insert,updata,delete,creat_table），并开启高危复核方式\n    2、普通用户执行（insert,updata,delete,creat_table），报高危提示，也提示高危复核提示\n    3、此时此用户进行高危提权（insert,updata,delete,creat_table），断言可以执行通过\n\n    用例：\n    1、只自定义database连接-高危（insert）\n    2、普通用户执行insert报高危提示，但是执行：updata,delete,creat_table）不会报高危提示\n    ",
+  "descriptionHtml" : "<pre><code>连接名称校验\n:return:\n数据源：oracleCDB\n用例一：\n1、database连接下，不设置任何高危\n2、普通用户执行（insert,updata,delete,creat_table），不报高危提示。（前提：此用户有这么命令的权限）\n用例二：\n1、自定义database-高危（insert,updata,delete,creat_table），并关闭高危复核方式\n2、普通用户执行（insert,updata,delete,creat_table），报高危提示，但不报高危复核提示\n用例三：\n1、自定义database-高危（insert,updata,delete,creat_table），并开启高危复核方式\n2、普通用户执行（insert,updata,delete,creat_table），报高危提示，也提示高危复核提示\n3、此时此用户进行高危提权（insert,updata,delete,creat_table），断言可以执行通过\n\n用例：\n1、只自定义database连接-高危（insert）\n2、普通用户执行insert报高危提示，但是执行：updata,delete,creat_table）不会报高危提示\n</code></pre>\n",
+  "status" : "broken",
+  "statusMessage" : "TypeError: 'bool' object is not subscriptable",
+  "statusTrace" : "def test_001_table_group():\n        \"\"\"\n        连接名称校验\n        :return:\n        数据源：oracleCDB\n        用例一：\n        1、database连接下，不设置任何高危\n        2、普通用户执行（insert,updata,delete,creat_table），不报高危提示。（前提：此用户有这么命令的权限）\n        用例二：\n        1、自定义database-高危（insert,updata,delete,creat_table），并关闭高危复核方式\n        2、普通用户执行（insert,updata,delete,creat_table），报高危提示，但不报高危复核提示\n        用例三：\n        1、自定义database-高危（insert,updata,delete,creat_table），并开启高危复核方式\n        2、普通用户执行（insert,updata,delete,creat_table），报高危提示，也提示高危复核提示\n        3、此时此用户进行高危提权（insert,updata,delete,creat_table），断言可以执行通过\n    \n        用例：\n        1、只自定义database连接-高危（insert）\n        2、普通用户执行insert报高危提示，但是执行：updata,delete,creat_table）不会报高危提示\n        \"\"\"\n        _sql_list = list(oracleCDB_table_sql.values())\n        # 清除环境，没有添加任何高危权限设置时，执行对应权限SQL语句，可以执行，不会有高危提示\n>       high_risk_resources.delete_all_high_risk_source_permission(_connection)\n\ntestcases\\高危命令\\oraclleCDB\\test_005_table_orcleCDB.py:68: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\ntins\\api\\db_manage\\access_set\\high_risk_resources.py:157: in delete_all_high_risk_source_permission\n    _permission_ids = db_manage_public.get_permission_ids(connection_name, _perm_type)\ntins\\api\\db_manage\\db_manage_public.py:104: in get_permission_ids\n    res = get_permission_info(connection_name, _perm_type)\ntins\\api\\db_manage\\db_manage_public.py:29: in get_permission_info\n    connection_id = get_connection_id(connection_name)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nconnection_name = 'xyz_test6666_oracleCDB'\n\n    def get_connection_id(connection_name):\n        \"\"\"\n        通过连接名称获取connection_id\n        :param connection_name:\n        :return:\n        \"\"\"\n        _info = get_info()\n>       connection_id = jsonpath.jsonpath(_info, \"$.data.data[?(@.nodeName=='{}')].connectionId\".format(connection_name))[0]\nE       TypeError: 'bool' object is not subscriptable\n\ntins\\api\\public.py:317: TypeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "\n    连接名称校验\n    :return:\n    数据源：oracleCDB\n    用例一：\n    1、database连接下，不设置任何高危\n    2、普通用户执行（insert,updata,delete,creat_table），不报高危提示。（前提：此用户有这么命令的权限）\n    用例二：\n    1、自定义database-高危（insert,updata,delete,creat_table），并关闭高危复核方式\n    2、普通用户执行（insert,updata,delete,creat_table），报高危提示，但不报高危复核提示\n    用例三：\n    1、自定义database-高危（insert,updata,delete,creat_table），并开启高危复核方式\n    2、普通用户执行（insert,updata,delete,creat_table），报高危提示，也提示高危复核提示\n    3、此时此用户进行高危提权（insert,updata,delete,creat_table），断言可以执行通过\n\n    用例：\n    1、只自定义database连接-高危（insert）\n    2、普通用户执行insert报高危提示，但是执行：updata,delete,creat_table）不会报高危提示\n    ",
+    "status" : "broken",
+    "statusMessage" : "TypeError: 'bool' object is not subscriptable",
+    "statusTrace" : "def test_001_table_group():\n        \"\"\"\n        连接名称校验\n        :return:\n        数据源：oracleCDB\n        用例一：\n        1、database连接下，不设置任何高危\n        2、普通用户执行（insert,updata,delete,creat_table），不报高危提示。（前提：此用户有这么命令的权限）\n        用例二：\n        1、自定义database-高危（insert,updata,delete,creat_table），并关闭高危复核方式\n        2、普通用户执行（insert,updata,delete,creat_table），报高危提示，但不报高危复核提示\n        用例三：\n        1、自定义database-高危（insert,updata,delete,creat_table），并开启高危复核方式\n        2、普通用户执行（insert,updata,delete,creat_table），报高危提示，也提示高危复核提示\n        3、此时此用户进行高危提权（insert,updata,delete,creat_table），断言可以执行通过\n    \n        用例：\n        1、只自定义database连接-高危（insert）\n        2、普通用户执行insert报高危提示，但是执行：updata,delete,creat_table）不会报高危提示\n        \"\"\"\n        _sql_list = list(oracleCDB_table_sql.values())\n        # 清除环境，没有添加任何高危权限设置时，执行对应权限SQL语句，可以执行，不会有高危提示\n>       high_risk_resources.delete_all_high_risk_source_permission(_connection)\n\ntestcases\\高危命令\\oraclleCDB\\test_005_table_orcleCDB.py:68: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\ntins\\api\\db_manage\\access_set\\high_risk_resources.py:157: in delete_all_high_risk_source_permission\n    _permission_ids = db_manage_public.get_permission_ids(connection_name, _perm_type)\ntins\\api\\db_manage\\db_manage_public.py:104: in get_permission_ids\n    res = get_permission_info(connection_name, _perm_type)\ntins\\api\\db_manage\\db_manage_public.py:29: in get_permission_info\n    connection_id = get_connection_id(connection_name)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nconnection_name = 'xyz_test6666_oracleCDB'\n\n    def get_connection_id(connection_name):\n        \"\"\"\n        通过连接名称获取connection_id\n        :param connection_name:\n        :return:\n        \"\"\"\n        _info = get_info()\n>       connection_id = jsonpath.jsonpath(_info, \"$.data.data[?(@.nodeName=='{}')].connectionId\".format(connection_name))[0]\nE       TypeError: 'bool' object is not subscriptable\n\ntins\\api\\public.py:317: TypeError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "8e535bf5bf986a11",
+      "name" : "log",
+      "source" : "8e535bf5bf986a11.txt",
+      "type" : "text/plain",
+      "size" : 907
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcases.高危命令.oraclleCDB"
+  }, {
+    "name" : "suite",
+    "value" : "test_005_table_orcleCDB"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-BQ91TRPV"
+  }, {
+    "name" : "thread",
+    "value" : "27328-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.高危命令.oraclleCDB.test_005_table_orcleCDB"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "beb3ae6e82f73494.json",
+  "parameterValues" : [ ]
+}
